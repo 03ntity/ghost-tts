@@ -2,9 +2,9 @@ const OpenJTalk = require('./lib/openjtalk/openjtalk');
 var express = require('express'),
     cors = require('cors'),
     secure = require('ssl-express-www');
+var app = express();
 const path = require('path');
-const app = express();
-const port = 8000;
+const port = 9090;
 const translate = require('@vitalets/google-translate-api');
 
 var tohoku_angry = new OpenJTalk({ htsvoice: 'voice/tohoku/tohoku-f01-angry.htsvoice' });
@@ -18,6 +18,9 @@ var mei_bashful = new OpenJTalk({ htsvoice: 'voice/mei/mei_bashful.htsvoice' });
 var mei_sad = new OpenJTalk({ htsvoice: 'voice/mei/mei_sad.htsvoice' });
 var mei_normal = new OpenJTalk();
 
+app.enable('trust proxy');
+app.use(cors())
+app.use(secure)
 
 app.get('/', async (req, res) => {
   res.sendFile(__dirname + '/views/index.html');
