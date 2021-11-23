@@ -1,4 +1,4 @@
-const OpenJTalk = require('./lib/openjtalk/openjtalk');
+const OpenJTalk = require('ghopen-jtalk');
 var express = require('express'),
     cors = require('cors'),
     secure = require('ssl-express-www');
