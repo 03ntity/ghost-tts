@@ -10,7 +10,6 @@
     "openjtalk" : "*",
     "cors": "^2.8.5",
     "ssl-express-www": "^3.0.7",
-    
     "uuid-v4": "*"
   },
   "devDependencies": {},
