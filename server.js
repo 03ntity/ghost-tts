@@ -2,7 +2,7 @@ const OpenJTalk = require('./lib/openjtalk/openjtalk');
 const express = require('express');
 const path = require('path');
 const app = express();
-const port = 1337;
+const port = 8000;
 const translate = require('@vitalets/google-translate-api');
 
 var tohoku_angry = new OpenJTalk({ htsvoice: 'voice/tohoku/tohoku-f01-angry.htsvoice' });
