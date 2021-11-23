@@ -1,0 +1,19 @@
+{
+  "name": "ghost-tts",
+  "version": "1.0.0",
+  "description": "Ghost Text To Speech",
+  "main": "server.js",
+  "dependencies": {
+    "@vitalets/google-translate-api": "^7.0.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "uuid-v4": "*"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js",
+    "test": "node tes.js"
+  },
+  "author": "4dsec",
+  "license": "ISC"
+}

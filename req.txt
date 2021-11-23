@@ -1,0 +1,6 @@
+numpy
+cmake
+cython
+scipy
+googletrans==3.1.0a0
+pyopenjtalk
