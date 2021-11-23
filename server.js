@@ -4,7 +4,7 @@ var express = require('express'),
     secure = require('ssl-express-www');
 var app = express();
 const path = require('path');
-const port = 9090;
+const port = process.env.PORT || 8080 || 5000 || 3000;
 const translate = require('@vitalets/google-translate-api');
 
 var tohoku_angry = new OpenJTalk({ htsvoice: 'voice/tohoku/tohoku-f01-angry.htsvoice' });
